@@ -62,7 +62,7 @@ public class DrawerActionsTest  extends ActivityInstrumentationTestCase2<DrawerA
     // the item may not necessarily be visible in the view hierarchy.
     int rowIndex = 2;
     String rowContents = DrawerActivity.DRAWER_CONTENTS[rowIndex];
-    onData(allOf(is(instanceOf(String.class)), is(rowContents))).perform(click());
+//    onData(allOf(is(instanceOf(String.class)), is(rowContents))).perform(click());
 
     // clicking the item should close the drawer.
     onView(withId(R.id.drawer_layout)).check(matches(isClosed()));

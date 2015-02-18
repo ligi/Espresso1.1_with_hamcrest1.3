@@ -34,7 +34,7 @@ public class ViewAssertionsTest extends InstrumentationTestCase {
   private Optional<NoMatchingViewException> presentException;
   private Matcher<View> alwaysAccepts;
   private Matcher<View> alwaysFails;
-  private Matcher<View> nullViewMatcher;
+  private Matcher<Object> nullViewMatcher;
 
   @Override
   public void setUp() throws Exception {

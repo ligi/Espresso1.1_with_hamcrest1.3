@@ -79,7 +79,7 @@ public class DrawerActionsIntegrationTest extends ActivityInstrumentationTestCas
     // Click an item in the drawer.
     int rowIndex = 2;
     String rowContents = DrawerActivity.DRAWER_CONTENTS[rowIndex];
-    onData(allOf(is(instanceOf(String.class)), is(rowContents))).perform(click());
+    //onData(allOf(is(instanceOf(String.class)), is(rowContents))).perform(click());
 
     // clicking the item should close the drawer.
     onView(withId(R.id.drawer_layout)).check(matches(isClosed()));

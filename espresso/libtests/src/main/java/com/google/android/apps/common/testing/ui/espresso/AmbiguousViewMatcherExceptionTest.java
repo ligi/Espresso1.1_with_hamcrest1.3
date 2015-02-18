@@ -9,13 +9,14 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import java.util.Objects;
 import org.hamcrest.Matcher;
 import org.hamcrest.Matchers;
 import org.hamcrest.StringDescription;
 
 /** Unit tests for {@link AmbiguousViewMatcherException}. */
 public class AmbiguousViewMatcherExceptionTest extends AndroidTestCase {
-  private Matcher<View> alwaysTrueMatcher;
+  private Matcher<Object> alwaysTrueMatcher;
 
   private RelativeLayout testView;
   private View child1;

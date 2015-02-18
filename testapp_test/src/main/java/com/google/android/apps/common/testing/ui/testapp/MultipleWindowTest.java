@@ -96,10 +96,10 @@ public class MultipleWindowTest extends ActivityInstrumentationTestCase2<SendAct
 
     // Which is useful because some of the completions may not be part of the View Hierarchy
     // unless you scroll around the list.
-    onData(allOf(instanceOf(String.class), is("Baltic Sea")))
+/*    onData(allOf(instanceOf(String.class), is("Baltic Sea")))
         .inRoot(withDecorView(not(is(getActivity().getWindow().getDecorView()))))
         .perform(click());
-
+  */
     onView(withId(R.id.auto_complete_text_view))
         .check(matches(withText("Baltic Sea")));
   }

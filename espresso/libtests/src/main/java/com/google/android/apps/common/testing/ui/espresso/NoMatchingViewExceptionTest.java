@@ -14,7 +14,7 @@ import org.mockito.MockitoAnnotations;
 
 /** Unit tests for {@link NoMatchingViewException}. */
 public class NoMatchingViewExceptionTest extends AndroidTestCase {
-  private Matcher<View> alwaysFailingMatcher;
+  private Matcher<Object> alwaysFailingMatcher;
 
   @Mock
   private View testView;
